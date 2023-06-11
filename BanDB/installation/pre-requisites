@@ -14,5 +14,26 @@ Here we are installing LEMN stack
 ```sudo apt install nginx -y```
 
 now navigate to `http://<serverip>`
+
 then you should now see a Welcome to nginx page.
 
+## 3 - Installing MySQL
+
+```sudo apt install mysql-server -y```
+
+```sudo mysql_secure_installation```
+
+Now follow through the prompts given setting up your database
+
+Now we want the password to be changed.
+
+
+```sudo mysql```
+
+`` `sql 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
+
+FLUSH PRIVILEGES;
+
+exit;
+`` `
