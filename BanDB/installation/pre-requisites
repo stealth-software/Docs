@@ -15,6 +15,8 @@ Here we are installing LEMN stack
 
 now navigate to `http://<serverip>`
 
+Now at this point you need to make an A-record on your DNS for your domain to point to your server ip
+
 then you should now see a Welcome to nginx page.
 
 ## 3 - Installing MySQL
@@ -37,3 +39,17 @@ FLUSH PRIVILEGES;
 
 exit;
 ```
+
+## 4 - install nodeJS
+
+```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash```
+
+```
+nvm install 16.13.2
+```
+
+## 5 - install certbot (SSL)
+
+```sudo apt install certbot python3-certbot-nginx -y```
+
+All pre-requisites are installed. You can move on to configuration.
