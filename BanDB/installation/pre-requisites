@@ -7,6 +7,7 @@ Here we are installing LEMN stack
 # Installing LEMN
 ## 1 - Updating the system
 ```sudo apt update -y```
+
 ```sudo apt upgrade -y```
 
 ## 2 - Installing Nginx
