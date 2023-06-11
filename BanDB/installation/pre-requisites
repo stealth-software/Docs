@@ -6,12 +6,18 @@ Here we are installing LEMN stack
 
 # Installing LEMN
 ## 1 - Updating the system
-```sudo apt update -y```
+```
+sudo apt update -y
+```
 
-```sudo apt upgrade -y```
+```
+sudo apt upgrade -y
+```
 
 ## 2 - Installing Nginx
-```sudo apt install nginx -y```
+```
+sudo apt install nginx -y
+```
 
 now navigate to `http://<serverip>`
 
@@ -21,16 +27,22 @@ then you should now see a Welcome to nginx page.
 
 ## 3 - Installing MySQL
 
-```sudo apt install mysql-server -y```
+```
+sudo apt install mysql-server -y
+```
 
-```sudo mysql_secure_installation```
+```
+sudo mysql_secure_installation
+```
 
 Now follow through the prompts given setting up your database
 
 Now we want the password to be changed.
 
 
-```sudo mysql```
+```
+sudo mysql
+```
 
 ```sql 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
@@ -42,7 +54,9 @@ exit;
 
 ## 4 - install nodeJS
 
-```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash```
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
 
 ```
 nvm install 16.13.2
@@ -50,6 +64,8 @@ nvm install 16.13.2
 
 ## 5 - install certbot (SSL)
 
-```sudo apt install certbot python3-certbot-nginx -y```
+```
+sudo apt install certbot python3-certbot-nginx -y
+```
 
 All pre-requisites are installed. You can move on to configuration.
